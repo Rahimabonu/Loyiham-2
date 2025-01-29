@@ -1,12 +1,14 @@
 
-const TodoItem = ({title}) => {
+const TodoItem = ({title, id}) => {
 console.log(title);
 
 
   return (
     <>
         <div className="todo">
-            <span>{title}</span>
+            <span>{id}.{title}</span>
+            <i onClick={() =>{ alert(id)}} class="fa-solid fa-trash"></i>
+
         </div>
     </>
 )
